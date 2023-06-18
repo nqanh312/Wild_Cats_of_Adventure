@@ -36,23 +36,42 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PlayerCtrl.cs" />
-     <Compile Include="Assets\CameraCtrl.cs" />
-     <Compile Include="Assets\PlayerBulletCtrl.cs" />
-     <Compile Include="Assets\DestroyWithDelay.cs" />
-     <Compile Include="Assets\CoinCtrl.cs" />
-     <Compile Include="Assets\SFXCtrl.cs" />
-     <Compile Include="Assets\Scripts\SFX.cs" />
-     <Compile Include="Assets\FeetCtrl.cs" />
-     <Compile Include="Assets\HeadCtrl.cs" />
-     <Compile Include="Assets\FragmentCtrl.cs" />
-     <Compile Include="Assets\GameCtrl.cs" />
-     <Compile Include="Assets\GarbageCtrl.cs" />
-     <Compile Include="Assets\DroppingPlatform.cs" />
-     <Compile Include="Assets\MovingPlatform.cs" />
-     <Compile Include="Assets\Parallax.cs" />
-     <Compile Include="Assets\PlayerStuck.cs" />
+     <Compile Include="Assets\Scripts\AI\DroppingPlatform.cs" />
+     <Compile Include="Assets\Scripts\Controllers\CoinCtrl.cs" />
+     <Compile Include="Assets\Scripts\AI\EnemyPatrol.cs" />
+     <Compile Include="Assets\Scripts\Helpers\AppClose.cs" />
+     <Compile Include="Assets\Scripts\Controllers\GameCtrl.cs" />
+     <Compile Include="Assets\Free 2D Cartoon Parallax Background\Demo\Script\ParallaxBackground_0.cs" />
+     <Compile Include="Assets\Scripts\Controllers\GarbageCtrl.cs" />
+     <Compile Include="Assets\Scripts\Controllers\FragmentCtrl.cs" />
+     <Compile Include="Assets\Scripts\AI\PlayerStuck.cs" />
+     <Compile Include="Assets\Scripts\AI\Parallax.cs" />
+     <Compile Include="Assets\Scripts\Data\GameData.cs" />
+     <Compile Include="Assets\Scripts\Controllers\EnemyHeadCtrl.cs" />
+     <Compile Include="Assets\Scripts\Controllers\KeyCtrl.cs" />
+     <Compile Include="Assets\Scripts\Controllers\FeetCtrl.cs" />
+     <Compile Include="Assets\Scripts\AI\CoinsCollector.cs" />
+     <Compile Include="Assets\Scripts\Controllers\HeadCtrl.cs" />
+     <Compile Include="Assets\Scripts\Data\SFX.cs" />
+     <Compile Include="Assets\Scripts\Controllers\CameraCtrl.cs" />
+     <Compile Include="Assets\Scripts\Helpers\SceneChanger.cs" />
+     <Compile Include="Assets\Scripts\AI\MovingPlatform.cs" />
+     <Compile Include="Assets\Free 2D Cartoon Parallax Background\Demo\Script\BackgroundControl_0.cs" />
+     <Compile Include="Assets\Scripts\Data\UI.cs" />
+     <Compile Include="Assets\Scripts\Controllers\SFXCtrl.cs" />
+     <Compile Include="Assets\Scripts\AI\SimpleMovement.cs" />
+     <Compile Include="Assets\Scripts\Helpers\DestroyWithDelay.cs" />
+     <Compile Include="Assets\Scripts\Controllers\PlayerCtrl.cs" />
+     <Compile Include="Assets\Scripts\AI\BomberBeeAI.cs" />
+     <Compile Include="Assets\Scripts\Data\BeeActivator.cs" />
+     <Compile Include="Assets\Scripts\Controllers\PlayerBulletCtrl.cs" />
+     <Compile Include="Assets\Scripts\FishAI.cs" />
+     <Compile Include="Assets\Scripts\FishSpawner.cs" />
+     <Compile Include="Assets\Scripts\AudioCtrl.cs" />
+     <Compile Include="Assets\Scripts\Data\PlayerAudio.cs" />
+     <Compile Include="Assets\Scripts\Data\AudioFX.cs" />
      <None Include="Assets\Sprites\Actors\Enemies\monster-croc\Crocodile Mascot Running Game Character\get more at bevouliin_dot_com.txt" />
+     <None Include="Assets\Audio\Audio Credits.txt" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Software\Unity 2020.3.45f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -280,6 +299,9 @@
     </Reference>
     <Reference Include="AGDLevelDesigner">
         <HintPath>D:\STUDY\SE7_SU23\PRU211m\Wild_Cats_of_Adventure\Assets\AbleGamesDev\LevelDesigner\AGDLevelDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+        <HintPath>D:\STUDY\SE7_SU23\PRU211m\Wild_Cats_of_Adventure\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>D:\Software\Unity 2020.3.45f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -727,6 +749,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{9ac2b7ca-f895-984c-1a85-af2217ec487b}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

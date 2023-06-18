@@ -15,6 +15,10 @@ TagManager:
   - PlayerFeet
   - Platform
   - PlayerStuck
+  - Enemy
+  - BigCoin
+  - EnemyHead
+  - LevelOneBoss
   layers:
   - Default
   - TransparentFX
@@ -57,4 +61,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3382755849
+    locked: 0
+  - name: UI
+    uniqueID: 76623271
     locked: 0
